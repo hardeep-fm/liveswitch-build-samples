@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start in Receive-Only Mode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="body">
+    <header>
+        <h1>Start in Receive-Only Mode</h1>
+        Connection starts without camera or microphone enabled. Press the respective button to enable them. Remote connection can be established at <a href="https://demo-prod.liveswitch.fm/#&channel=start-in-receive-only-example&mode=1" target="_blank">https://demo-prod.liveswitch.fm/#&channel=start-in-receive-only-example&mode=1</a>.
+    </header>
+
+    <section class="section">
+        <div class="video-container">
+            <div class="local-container user-container">
+                <div id="localVideo" class="user-video">
+                </div>
+            </div>
+            <div class="remote-container user-container">
+                <div id="remoteVideo" class="user-video">
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="joinButton">Join</button>
+            <button id="leaveButton" disabled>Leave</button>
+            <button id="startLocalVideoButton" disabled>Start Local Video</button>
+            <button id="startLocalAudioButton" disabled>Start Local Audio</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024+ LiveSwitch Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="https://demo.liveswitch.fm/lib/fm.liveswitch.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+@import "../../index.css";
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 90%;
+}
+
+.user-container {
+    width: 640px;
+    height: 480px;
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-video {
+    flex: 1;
+    background-color: #ccc;
+    /* Background color for the top div */
+    position: relative;
+    display: flex;
+    /* Use flexbox to control the video's size */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.user-video>div {
+    flex: 1;
+    /* Make the div take up all available space */
+    min-height: 100%;
+    /* Ensure the div takes at least the height of its parent (.top) */
+}
+
+video {
+    max-width: 100%;
+    /* Ensure the video doesn't overflow its container */
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.user-video-status {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* To stack the icon and text vertically */
+    align-items: center;
+    /* To center items horizontally */
+    justify-content: center;
+    /* To center items vertically */
+}
+
+.user-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* Adjust the padding as needed */
+    background-color: #f0f0f0;
+    /* Background color for the bottom div */
+}
+
+.user-status-indicator {
+    margin-right: 10px;
+    /* Adjust the margin as needed */
+    min-width: 0;
+    /* Allow icons to shrink below their natural width */
+    max-width: 100%;
+    height: auto;
+}
+
+.button-container {
+    padding-top: 10px;
+    text-align: center;
+    height: 10%;
+}

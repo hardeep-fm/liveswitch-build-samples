@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="body">
+    <header>
+        <h1>Record Media</h1>
+        Recording is done using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder" target=_blank>Media Recorder</a> APIs. Recorded files are in <a href="https://en.wikipedia.org/wiki/WebM" target=_blank>WebM</a> format.
+    </header>
+    <section class="section">
+        <div class="video-container">
+            <div class="local-container user-container">
+                <div id="localVideo" class="user-video">
+                </div>
+                <div class="user-indicators">
+                    <i id="local-recording-indicator" class="fa user-status-indicator"
+                        style="font-size:36px"></i>
+                </div>
+            </div>
+            <div class="remote-container user-container">
+                <div id="remoteVideo" class="user-video">
+                </div>
+                <div class="user-indicators">
+                    <i id="remote-recording-indicator" class="fa user-status-indicator"
+                        style="font-size:36px"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="joinButton">Join</button>
+            <button id="leaveButton" disabled>Leave</button>
+            <button id="recordLocalMediaButton" disabled>Record Local Media</button>
+            <button id="recordRemoteMediaButton" disabled>Record Remote Media</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024+ LiveSwitch Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="https://demo.liveswitch.fm/lib/fm.liveswitch.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
